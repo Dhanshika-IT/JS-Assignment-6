@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="container">
+
+    <!-- Register Page -->
+    <div id="registerPage" class="form-box">
+        <h1>Register</h1>
+        <p>Create your account</p>
+
+        <form id="registerForm">
+            <input type="text" id="regName" placeholder="Full Name">
+            <input type="email" id="regEmail" placeholder="Email Address">
+            <input type="password" id="regPassword" placeholder="Create Password">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <p>Already have an account?
+            <a href="#" id="showLogin">Login</a>
+        </p>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="form-box hidden">
+        <h1>Login</h1>
+        <p>Welcome back!</p>
+
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email Address">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <p>Don't have an account?
+            <a href="#" id="showRegister">Register</a>
+        </p>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboardPage" class="form-box hidden">
+        <h1>Dashboard</h1>
+        <h2 id="welcomeMessage">Welcome!</h2>
+
+        <p>You have successfully logged in.</p>
+
+        <button type="button" id="logoutButton">Logout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
